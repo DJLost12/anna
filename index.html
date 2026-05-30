@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>anna :: playground node</title>
+
+  <style>
+    body {
+      margin: 0;
+      background: #0d1117;
+      color: #d0d7de;
+      font-family: Consolas, monospace;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .terminal {
+      width: 90%;
+      max-width: 850px;
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 10px;
+      box-shadow: 0 0 30px rgba(0,0,0,0.5);
+      overflow: hidden;
+    }
+
+    .topbar {
+      background: #21262d;
+      padding: 10px;
+      border-bottom: 1px solid #30363d;
+    }
+
+    .dots {
+      display: flex;
+      gap: 8px;
+    }
+
+    .dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+    }
+
+    .red { background: #ff5f56; }
+    .yellow { background: #ffbd2e; }
+    .green { background: #27c93f; }
+
+    .content {
+      padding: 30px;
+      line-height: 1.7;
+    }
+
+    .prompt {
+      color: #58a6ff;
+    }
+
+    .cursor {
+      display: inline-block;
+      width: 10px;
+      animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+      50% { opacity: 0; }
+    }
+
+    .warning {
+      color: #ffa657;
+    }
+
+    .good {
+      color: #3fb950;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="terminal">
+
+    <div class="topbar">
+      <div class="dots">
+        <div class="dot red"></div>
+        <div class="dot yellow"></div>
+        <div class="dot green"></div>
+      </div>
+    </div>
+
+    <div class="content">
+      <p><span class="prompt">djl0st12@anna:~$</span> whoami</p>
+      <p>experimental VPS playground node</p>
+
+      <p><span class="prompt">djl0st12@anna:~$</span> status</p>
+      <p class="good">online</p>
+
+      <p><span class="prompt">djl0st12@anna:~$</span> purpose</p>
+      <p>
+        break things.<br>
+        learn things.<br>
+        rebuild things correctly afterwards.
+      </p>
+
+      <p><span class="prompt">djl0st12@anna:~$</span> warning</p>
+      <p class="warning">
+        this machine may contain:
+        questionable nginx configs,
+        abandoned containers,
+        unfinished scripts,
+        and dangerous levels of curiosity.
+      </p>
+
+      <p><span class="prompt">djl0st12@anna:~$</span> _<span class="cursor">█</span></p>
+    </div>
+
+  </div>
+</body>
+</html>
