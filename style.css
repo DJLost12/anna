@@ -1,5 +1,20 @@
 body {
       margin: 0;
+      background-image: url("assets/mint.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      /*background: #0d1117;*/
+      color: #d0d7de;
+      font-family: Consolas, monospace;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
+    .body2 {
+      margin: 0;
       background: #0d1117;
       color: #d0d7de;
       font-family: Consolas, monospace;
@@ -10,10 +25,9 @@ body {
       overflow-x: hidden;
       overflow-y: auto;
     }
-
     .terminal {
-      width: 90%;
-      max-width: 850px;
+      width: 95%;
+      max-width: 1000px;
       background: #161b22;
       border: 1px solid #30363d;
       border-radius: 10px;
